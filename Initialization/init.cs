@@ -24,8 +24,7 @@ namespace PARSminexmr.Initialization
                 File.Create("Settings.txt");
                 return initD;
             }
-
-            return initD;
+            
         }
         
     }

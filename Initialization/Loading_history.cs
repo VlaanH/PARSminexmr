@@ -4,11 +4,10 @@ namespace PARSminexmr.Initialization
 {
     public static class Loading_history
     {
-        
-
+       static string History = default;
        public static string Loading()
        {
-           string History = default;
+           
            
             if (File.Exists("History.txt"))
             {

@@ -9,7 +9,6 @@ namespace PARSminexmr
         public static void Main(string[] args)
         {
             Application.Init();
-
             var app = new Application("org.PARSminexmr.PARSminexmr", GLib.ApplicationFlags.None);
             app.Register(GLib.Cancellable.Current);
 

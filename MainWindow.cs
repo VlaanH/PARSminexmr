@@ -48,7 +48,7 @@ namespace PARSminexmr
             Application.Quit();
         }
 
-        private InitData initD = default;
+       
        async private void initStart()
         {
             await Task.Run(()  =>
@@ -61,8 +61,8 @@ namespace PARSminexmr
                    
                 });
                 
-                initD = init.SettingsFileRead();
-                Entry.Text = initD.Address;
+                Hdata.initD = init.SettingsFileRead();
+                Entry.Text = Hdata.initD.Address;
                 
             });
         }
@@ -76,7 +76,7 @@ namespace PARSminexmr
           
                 allData.Datetime = DateTime.Now.ToString();
                 allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
-                allData.fiat =  Convert_to_fiat.Currency(allData.XMR,initD.Currency);
+                allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
                 
                 label.Text = allData.XMR + "|" + allData.fiat + "|" + allData.Datetime;
 
