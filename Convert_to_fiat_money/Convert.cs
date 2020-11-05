@@ -8,7 +8,6 @@ namespace PARSminexmr.Convert_to_fiat_money
        public static string Currency(string parsaddres=default,string Currency=default)
         {
 
-
             String Response = default;
             try
             {
@@ -25,10 +24,7 @@ namespace PARSminexmr.Convert_to_fiat_money
 
             Response = Regex.Match(Response, @" <b>([0-9 \.]+) ").Groups[1].Value;
             
-
-            
-            
-            return Response+" " + Currency;
+            return Response+ " " + Currency;
         }
     }
 }

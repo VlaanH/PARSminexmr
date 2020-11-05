@@ -61,8 +61,6 @@ namespace PARSminexmr.Parsaddres
                         break;
             }
                 
-              
-
             return stringP;
             
         }
