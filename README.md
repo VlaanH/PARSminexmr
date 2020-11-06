@@ -6,5 +6,7 @@
 
 <code>\<Currency\><strong>Your_currency_example(USD)</strong>\</Currency\></code>
 
-# Compilation for .NET Core С# 9.0 (I am using JetBrains Rider)
+# Compilation for .NET Core С# 9.0
+<strong><code>(I am using JetBrains Rider)</code></strong>
+
 <strong><code>$ dotnet build</code></strong>
