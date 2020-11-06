@@ -10,9 +10,6 @@ using DateTime = System.DateTime;
 using PARSminexmr.Data;
 using Task = System.Threading.Tasks.Task;
 using PARSminexmr.Initialization;
-
-
-
 namespace PARSminexmr
 {
     class MainWindow : Window
@@ -63,27 +60,34 @@ namespace PARSminexmr
             });
         }
 
+       private bool protection = true;
         async private void Button1_Clicked(object sender, EventArgs a)
         {
-            PARS_ALL_data allData = new PARS_ALL_data();
-            await Task.Run(()  => {
+            if (protection==true)
+            { 
+                protection = false;
+                PARS_ALL_data allData = new PARS_ALL_data();
+                await Task.Run(()  => {
           
-                allData.Datetime = DateTime.Now.ToString();
-                allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
-                allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
+                    allData.Datetime = DateTime.Now.ToString();
+                    allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
+                    allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
                 
-                label.Text = allData.XMR + " XMR | " + allData.fiat + " | " + allData.Datetime;
+                    label.Text =  allData.fiat + " | " +allData.XMR  + " XMR | " + allData.Datetime;
 
-                Gtk.Application.Invoke(delegate
-                {
-                    textView.Buffer.Text += label.Text+"\n";
+                    Gtk.Application.Invoke(delegate
+                    {
+                        textView.Buffer.Text += label.Text+"\n";
                    
-                    File.WriteAllText("History.txt",textView.Buffer.Text);
+                        File.WriteAllText("History.txt",textView.Buffer.Text);
+
+                    });
+                    protection = true;
 
                 });
-               
-                
-            });
+            }    
+            
+            
 
             
         }

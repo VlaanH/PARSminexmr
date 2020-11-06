@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.2">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Initialization/init.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Initialization/init.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/History.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/History.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.pdb" afterDir="false" />
@@ -51,6 +72,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,33 +109,66 @@
       <option name="presentableId" value="Default" />
       <updated>1604590710481</updated>
       <workItem from="1604590728602" duration="1428000" />
+      <workItem from="1604657646988" duration="2279000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="204" key="GridCell.Tab.0.bottom" timestamp="1604591943066">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1604686124174">
+      <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1604591943066" />
-    <state width="1874" height="204" key="GridCell.Tab.0.center" timestamp="1604591943065">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604686124174" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1604686124174">
+      <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1604591943065" />
-    <state width="1874" height="204" key="GridCell.Tab.0.left" timestamp="1604591943065">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604686124174" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1604686124173">
+      <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1604591943065" />
-    <state width="1874" height="204" key="GridCell.Tab.0.right" timestamp="1604591943066">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604686124173" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1604686124174">
+      <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1604591943066" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604686124174" />
+    <state x="2364" y="567" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604602218824">
+      <screen x="1600" y="128" width="1920" height="1080" />
+    </state>
+    <state x="2364" y="567" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604602218824" />
   </component>
 </project>
