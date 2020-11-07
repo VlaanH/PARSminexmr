@@ -1,3 +1,2 @@
-<Address>Your_adress</Address>
-
+<Address></Address>
 <Currency>USD</Currency>
