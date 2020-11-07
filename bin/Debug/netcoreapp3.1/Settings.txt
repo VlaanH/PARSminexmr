@@ -1,0 +1,3 @@
+<Address>Your_adress</Address>
+
+<Currency>USD</Currency>
