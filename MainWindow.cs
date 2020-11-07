@@ -17,6 +17,7 @@ namespace PARSminexmr
 
         
         [UI] private Label label = null;
+        [UI] private Label label2 = null;
         [UI] private Button button = null;
         [UI] private Entry Entry = null;
         [UI] private TextView textView = null;
@@ -67,14 +68,18 @@ namespace PARSminexmr
             { 
                 protection = false;
                 PARS_ALL_data allData = new PARS_ALL_data();
-                await Task.Run(()  => {
-          
+                await Task.Run(()  =>
+                {
+
+                    label2.Text = ".";
                     //Getting the current date and time
                     allData.Datetime = DateTime.Now.ToString();
                     
+                    label2.Text += ".";
                     //Convert the pool integer to fractional
                     allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
                     
+                    label2.Text += ".";
                     //Convert XMR to fiat
                     allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
                 
@@ -82,6 +87,7 @@ namespace PARSminexmr
 
                     Gtk.Application.Invoke(delegate
                     {
+                        label2.Text += ".";
                         textView.Buffer.Text += label.Text+"\n";
                    
                         File.WriteAllText("History.txt",textView.Buffer.Text);
