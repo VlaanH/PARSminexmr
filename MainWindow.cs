@@ -69,8 +69,13 @@ namespace PARSminexmr
                 PARS_ALL_data allData = new PARS_ALL_data();
                 await Task.Run(()  => {
           
+                    //Getting the current date and time
                     allData.Datetime = DateTime.Now.ToString();
+                    
+                    //Convert the pool integer to fractional
                     allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
+                    
+                    //Convert XMR to fiat
                     allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
                 
                     label.Text =  allData.fiat + " | " +allData.XMR  + " XMR | " + allData.Datetime;
