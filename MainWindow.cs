@@ -17,13 +17,12 @@ namespace PARSminexmr
 
         
         [UI] private Label label = null;
-        [UI] private Label label2 = null;
+        [UI] private ProgressBar Progres = null;
         [UI] private Button button = null;
         [UI] private Entry Entry = null;
         [UI] private TextView textView = null;
         
       
-        private int _counter;
 
         public MainWindow() : this(new Builder("MainWindow.glade")) { }
 
@@ -49,7 +48,7 @@ namespace PARSminexmr
         {
             await Task.Run(()  =>
             {
-            
+                Progres.Visible = false;
                 Gtk.Application.Invoke(delegate
                 {
                     textView.Buffer.Text = Loading_history.Loading();
@@ -61,39 +60,55 @@ namespace PARSminexmr
             });
         }
 
-       private bool protection = true;
+       private bool protection = false;
         async private void Button1_Clicked(object sender, EventArgs a)
         {
-            if (protection==true)
-            { 
-                protection = false;
+            if (protection==false)
+            {   
+                
+                Progres.Visible = true;
+                protection = true;
+                Progres.Fraction = default;
+                
                 PARS_ALL_data allData = new PARS_ALL_data();
                 await Task.Run(()  =>
                 {
-
-                    label2.Text = ".";
+                 
+                    
+                
+             
+                 
                     //Getting the current date and time
                     allData.Datetime = DateTime.Now.ToString();
                     
-                    label2.Text += ".";
+                 
+                  
+                    
+                 
                     //Convert the pool integer to fractional
                     allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
                     
-                    label2.Text += ".";
+                   
+                   
                     //Convert XMR to fiat
+                    Progres.Fraction += 0.5;
                     allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
                 
+             
                     label.Text =  allData.fiat + " | " +allData.XMR  + " XMR | " + allData.Datetime;
 
                     Gtk.Application.Invoke(delegate
                     {
-                        label2.Text += ".";
+                       
                         textView.Buffer.Text += label.Text+"\n";
-                   
+                      
                         File.WriteAllText("History.txt",textView.Buffer.Text);
-
+                        Progres.Fraction += 1;
                     });
-                    protection = true;
+                    protection = false;
+                  
+
+
 
                 });
             }    
