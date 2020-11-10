@@ -7,7 +7,9 @@ namespace PARSminexmr.Convert_to_fiat_money
     {
        public static string Currency(string parsaddres=default,string Currency=default)
         {
-
+            
+            Currency = Regex.Match(Currency, @"([\w \W A-Z 0-9]+):").Groups[1].Value;
+            
             String Response = default;
             try
             {
