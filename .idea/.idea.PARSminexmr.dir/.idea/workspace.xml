@@ -25,18 +25,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.4">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.4.3 added GTK ProgressBar">
+      <change afterPath="$PROJECT_DIR$/Settings/Settings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsaddres/ParsPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parsaddres/ParsPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/PARSminexmr.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Settings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/PARSminexmr.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/MainWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parsaddres/ConvertPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/PARS_ALL_data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/vlanh/Рабочий стол/PARSminexmr23/Convert_to_fiat_money/Convert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Initialization/InitData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,9 +61,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Initialization/init.cs" />
-        <option value="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" />
         <option value="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" />
+        <option value="$PROJECT_DIR$/Parsaddres/ParsPool.cs" />
+        <option value="$PROJECT_DIR$/Settings/Settings.cs" />
         <option value="$PROJECT_DIR$/MainWindow.cs" />
       </list>
     </option>
@@ -117,7 +121,8 @@
       <workItem from="1604590728602" duration="1428000" />
       <workItem from="1604657646988" duration="4744000" />
       <workItem from="1604735695770" duration="943000" />
-      <workItem from="1604953141704" duration="2198000" />
+      <workItem from="1604953141704" duration="3147000" />
+      <workItem from="1605040873573" duration="3498000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -126,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604686148968</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="0.4.3 added GTK ProgressBar">
+      <created>1604955586352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604955586352</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,29 +173,30 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.4" />
+    <MESSAGE value="0.4.3 added GTK ProgressBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.4.3 added GTK ProgressBar" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="192" key="GridCell.Tab.0.bottom" timestamp="1604955288333">
+    <state width="1874" height="192" key="GridCell.Tab.0.bottom" timestamp="1605044237131">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1604759111515" />
-    <state width="1874" height="192" key="GridCell.Tab.0.bottom/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604955288333" />
-    <state width="1874" height="192" key="GridCell.Tab.0.center" timestamp="1604955288332">
+    <state width="1874" height="192" key="GridCell.Tab.0.bottom/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1605044237131" />
+    <state width="1874" height="192" key="GridCell.Tab.0.center" timestamp="1605044237131">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1604759111514" />
-    <state width="1874" height="192" key="GridCell.Tab.0.center/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604955288332" />
-    <state width="1874" height="192" key="GridCell.Tab.0.left" timestamp="1604955288332">
+    <state width="1874" height="192" key="GridCell.Tab.0.center/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1605044237131" />
+    <state width="1874" height="192" key="GridCell.Tab.0.left" timestamp="1605044237131">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1604759111514" />
-    <state width="1874" height="192" key="GridCell.Tab.0.left/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604955288332" />
-    <state width="1874" height="192" key="GridCell.Tab.0.right" timestamp="1604955288332">
+    <state width="1874" height="192" key="GridCell.Tab.0.left/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1605044237131" />
+    <state width="1874" height="192" key="GridCell.Tab.0.right" timestamp="1605044237131">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="204" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1604759111515" />
-    <state width="1874" height="192" key="GridCell.Tab.0.right/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604955288332" />
+    <state width="1874" height="192" key="GridCell.Tab.0.right/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1605044237131" />
     <state width="1874" height="349" key="GridCell.Tab.1.bottom" timestamp="1604736637477">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
@@ -248,10 +261,10 @@
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
     <state width="1874" height="349" key="GridCell.Tab.4.right/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604736637478" />
-    <state x="2156" y="388" key="Vcs.Push.Dialog.v2" timestamp="1604686161068">
+    <state x="2156" y="388" key="Vcs.Push.Dialog.v2" timestamp="1604955605047">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>
-    <state x="2156" y="388" key="Vcs.Push.Dialog.v2/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604686161068" />
+    <state x="2156" y="388" key="Vcs.Push.Dialog.v2/1600.128.1920.1080/0.0.1600.900@1600.128.1920.1080" timestamp="1604955605047" />
     <state x="2364" y="567" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604953330337">
       <screen x="1600" y="128" width="1920" height="1080" />
     </state>

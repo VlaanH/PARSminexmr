@@ -10,6 +10,8 @@ using DateTime = System.DateTime;
 using PARSminexmr.Data;
 using Task = System.Threading.Tasks.Task;
 using PARSminexmr.Initialization;
+using PARSminexmr.Settings;
+
 namespace PARSminexmr
 {
     class MainWindow : Window
@@ -55,7 +57,12 @@ namespace PARSminexmr
                 });
                 
                 Hdata.initD = init.SettingsFileRead();
-                Entry.Text = Hdata.initD.Address;
+
+                if (Hdata.initD.Currency!=""&Hdata.initD.Address!="")
+                {
+                    Entry.Text = Hdata.initD.Currency+":"+Hdata.initD.Address;
+                }
+                
                 
             });
         }
@@ -92,7 +99,7 @@ namespace PARSminexmr
                    
                     //Convert XMR to fiat
                     Progres.Fraction += 0.5;
-                    allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Hdata.initD.Currency);
+                    allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Entry.Text);
                 
              
                     label.Text =  allData.fiat + " | " +allData.XMR  + " XMR | " + allData.Datetime;
@@ -107,8 +114,8 @@ namespace PARSminexmr
                     });
                     protection = false;
                   
-
-
+                    //saving settings to file
+                    _Settings.Save(Entry.Text);
 
                 });
             }    
