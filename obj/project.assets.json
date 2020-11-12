@@ -192,11 +192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/vlanh/Рабочий стол/PARSminexmr23/PARSminexmr.csproj",
+      "projectUniqueName": "/home/vlanh/Рабочий стол/PARSminexmr2/PARSminexmr.csproj",
       "projectName": "PARSminexmr",
-      "projectPath": "/home/vlanh/Рабочий стол/PARSminexmr23/PARSminexmr.csproj",
+      "projectPath": "/home/vlanh/Рабочий стол/PARSminexmr2/PARSminexmr.csproj",
       "packagesPath": "/home/vlanh/.nuget/packages/",
-      "outputPath": "/home/vlanh/Рабочий стол/PARSminexmr23/obj/",
+      "outputPath": "/home/vlanh/Рабочий стол/PARSminexmr2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/vlanh/.nuget/NuGet/NuGet.Config"

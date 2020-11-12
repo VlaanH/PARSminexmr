@@ -1,6 +1,6 @@
 # Configuration file
 
-<code>Path:<strong>/bin/Debug/netcoreapp5.0/Settings.txt</strong></code>
+<code>Path:<strong>/bin/Debug/netcoreapp3.1/Settings.txt</strong></code>
 
 <code>\<Address\><strong>Your_address</strong>\</Address\></code>
 

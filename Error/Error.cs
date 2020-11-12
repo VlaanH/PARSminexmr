@@ -22,6 +22,7 @@ namespace PARSminexmr
                     md.Title = "Error";
                     md.Run ();
                     md.Destroy ();
+                    
                 }
             });
         }
