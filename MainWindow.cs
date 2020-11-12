@@ -46,11 +46,12 @@ namespace PARSminexmr
         }
 
        
-       async private void initStart()
+       private async void initStart()
         {
             await Task.Run(()  =>
             {
                 Progres.Visible = false;
+                
                 Gtk.Application.Invoke(delegate
                 {
                     textView.Buffer.Text = Loading_history.Loading();
@@ -58,6 +59,7 @@ namespace PARSminexmr
                 
                 Hdata.initD = init.SettingsFileRead();
 
+                
                 if (Hdata.initD.Currency!=""&Hdata.initD.Address!="")
                 {
                     Entry.Text = Hdata.initD.Currency+":"+Hdata.initD.Address;
@@ -67,23 +69,23 @@ namespace PARSminexmr
             });
         }
 
-       private bool protection = false;
-        async private void Button1_Clicked(object sender, EventArgs a)
+       private bool _Protection = false;
+        private async void Button1_Clicked(object sender, EventArgs a)
         {
-            if (protection==false)
+            if (Entry.Text=="")
+            {
+                Error.Entry();
+            }
+            else if  (_Protection==false)
             {   
                 
                 Progres.Visible = true;
-                protection = true;
+                _Protection = true;
                 Progres.Fraction = default;
                 
                 PARS_ALL_data allData = new PARS_ALL_data();
                 await Task.Run(()  =>
                 {
-                 
-                    
-                
-             
                  
                     //Getting the current date and time
                     allData.Datetime = DateTime.Now.ToString();
@@ -97,25 +99,40 @@ namespace PARSminexmr
                     
                    
                    
+                    
+                    Progres.Fraction = 0.5;
                     //Convert XMR to fiat
-                    Progres.Fraction += 0.5;
                     allData.fiat =  Convert_to_fiat.Currency(allData.XMR,Entry.Text);
-                
-             
-                    label.Text =  allData.fiat + " | " +allData.XMR  + " XMR | " + allData.Datetime;
 
-                    Gtk.Application.Invoke(delegate
+
+                    if (allData.fiat!="Error")
                     {
+                        label.Text =  allData.fiat + " | " +allData.XMR  + " XMR | " + allData.Datetime;
+                        
+                        Gtk.Application.Invoke(delegate
+                        {
                        
-                        textView.Buffer.Text += label.Text+"\n";
+                            textView.Buffer.Text += label.Text+"\n";
                       
-                        File.WriteAllText("History.txt",textView.Buffer.Text);
-                        Progres.Fraction += 1;
-                    });
-                    protection = false;
+                            File.WriteAllText("History.txt",textView.Buffer.Text);
+                            Progres.Fraction = 1;
+                        });
+                        //saving settings to file
+                        _Settings.Save(Entry.Text);
+                    }
+                    else
+                    {
+                        Error.Entry();
+                        Progres.Visible = false;
+                        Progres.Fraction = default;
+                    }
+
+
+                    
+                   
+                    _Protection = false;
                   
-                    //saving settings to file
-                    _Settings.Save(Entry.Text);
+                    
 
                 });
             }    

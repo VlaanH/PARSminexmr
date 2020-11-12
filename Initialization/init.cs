@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Net;
 using System.Text.RegularExpressions;
 
 namespace PARSminexmr.Initialization
@@ -9,6 +10,7 @@ namespace PARSminexmr.Initialization
        public static InitData SettingsFileRead()
         {
             InitData initD = new InitData();
+
             if (File.Exists("Settings.txt")==true)
             {
                 string file = File.ReadAllText("Settings.txt");
