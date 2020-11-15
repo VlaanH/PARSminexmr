@@ -19,7 +19,7 @@ namespace PARSminexmr.Convert_to_fiat_money
             {
                 System.Net.WebClient wc = new System.Net.WebClient();
 
-                Response = wc.DownloadString($"https://www.calc.ru/kurs-XMR-{Currency}.html?text_quantity=" + Parsaddres);
+                Response = wc.DownloadString($"https://www.calc.ru/kurs-XMR-{Currency}.html?text_quantity="+Parsaddres);
             }
             catch (Exception)
             {

@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Application = Gtk.Application;
 using PARSminexmr.Initialization;
 using Gtk;
@@ -9,8 +10,6 @@ namespace PARSminexmr
         [STAThread]
         public static void Main(string[] args)
         {
-       
-            
             Application.Init();
             
             //Download icon

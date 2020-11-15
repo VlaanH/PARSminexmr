@@ -1,15 +1,14 @@
 using System;
 using System.IO;
-using GLib;
 using Gtk;
 using UI = Gtk.Builder.ObjectAttribute;
 using PARSminexmr.Parsaddres;
 using PARSminexmr.Convert_to_fiat_money;
 using Application = Gtk.Application;
 using DateTime = System.DateTime;
-using PARSminexmr.Data;
 using Task = System.Threading.Tasks.Task;
 using PARSminexmr.Initialization;
+using PARSminexmr.Data;
 using PARSminexmr.Settings;
 
 namespace PARSminexmr
@@ -50,6 +49,9 @@ namespace PARSminexmr
         {
             await Task.Run(()  =>
             {
+
+                InitData _InitData = new InitData();
+                    
                 Progres.Visible = false;
                 
                 Gtk.Application.Invoke(delegate
@@ -57,13 +59,14 @@ namespace PARSminexmr
                     textView.Buffer.Text = Loading_history.Loading();
                 });
                 
-                Hdata.initD = init.SettingsFileRead();
+                _InitData = init.SettingsFileRead();
 
+
+               
+                Entry.Text = _InitData.Currency+_InitData.Address;
+              
                 
-                if (Hdata.initD.Currency!=""&Hdata.initD.Address!="")
-                {
-                    Entry.Text = Hdata.initD.Currency+":"+Hdata.initD.Address;
-                }
+                
                 
                 
             });
@@ -113,18 +116,29 @@ namespace PARSminexmr
                         {
                        
                             textView.Buffer.Text += label.Text+"\n";
-                      
+
                             File.WriteAllText("History.txt",textView.Buffer.Text);
+                           
                             Progres.Fraction = 1;
+                            
                         });
+
+                  
                         //saving settings to file
+             
                         _Settings.Save(Entry.Text);
+                        
+                     
+                       
+              
+                        
                     }
                     else
                     {
                         Error.Entry();
-                        Progres.Visible = false;
-                        Progres.Fraction = default;
+
+                        label.Text = "Error";
+                        Progres.Fraction = 1;
                     }
 
 
@@ -133,6 +147,14 @@ namespace PARSminexmr
                     
 
                 });
+                
+             
+                
+             
+                
+                
+                
+                
             }    
             
             

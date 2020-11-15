@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -13,9 +14,15 @@ namespace PARSminexmr.Settings
             string Only_address = Regex.Match(address, @":([\w \W A-Z 0-9]+)").Groups[1].Value;
             
             string Full_settings = "<Address>" + Only_address + "</Address>" + "\n" + "<Currency>" + Currency + "</Currency>";
-            
 
-            File.WriteAllText("Settings.txt",Full_settings);
+            try
+            {
+                File.WriteAllText("Settings.txt",Full_settings);
+            }
+            catch (Exception e)
+            {
+            }
+            
         }
     }
 }
