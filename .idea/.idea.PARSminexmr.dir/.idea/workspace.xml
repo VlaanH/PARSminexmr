@@ -25,16 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="Bug fix.">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.2 Bug fixes.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/PARS_ALL_data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PARS_ALL_data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Initialization/Loading_history.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Initialization/Loading_history.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Initialization/init.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Initialization/init.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Error/Error.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Error/Error.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/Settings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +50,14 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/MainWindow.cs" />
       <option value="$PROJECT_DIR$/Settings/Settings.cs" />
       <option value="$PROJECT_DIR$/Initialization/init.cs" />
       <option value="$PROJECT_DIR$/Data/PARS_ALL_data.cs" />
       <option value="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Initialization/Loading_history.cs" />
+      <option value="$PROJECT_DIR$/MainWindow.cs" />
+      <option value="$PROJECT_DIR$/Error/Error.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jsRDZsTjWOE6ocIzZCUWKwFueM" />
@@ -72,7 +68,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34997287" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30005425" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -122,7 +118,7 @@
       <workItem from="1605369430149" duration="4578000" />
       <workItem from="1605432757401" duration="1733000" />
       <workItem from="1605447159535" duration="1755000" />
-      <workItem from="1605450495359" duration="337000" />
+      <workItem from="1605450495359" duration="3160000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -152,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605191542203</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="0.5.2 Bug Fixes.">
+      <created>1605451067913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605451067914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +174,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -189,6 +192,7 @@
     <MESSAGE value="0.4" />
     <MESSAGE value="0.4.3 added GTK ProgressBar" />
     <MESSAGE value="Bug fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix." />
+    <MESSAGE value="0.5.2 Bug fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.2 Bug fixes." />
   </component>
 </project>

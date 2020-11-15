@@ -125,7 +125,6 @@ namespace PARSminexmr
 
                   
                         //saving settings to file
-             
                         _Settings.Save(Entry.Text);
                         
                      
