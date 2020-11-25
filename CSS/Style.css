@@ -1,0 +1,23 @@
+textview text {
+  color: #ffffff;
+    background-color: #0e1621;
+  
+}
+button {
+  border-radius: 4px;
+  color: #000000;
+
+}
+
+#main{
+  background-color: #18212b;
+
+}
+entry {
+  border-radius: 4px;
+  color: #000000;
+  background-color: #ffffff;
+}
+#labelm{
+  color: #ffffff;
+}

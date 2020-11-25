@@ -25,15 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.3 Bug fixes in GTK MessageDialog.">
-      <change afterPath="$PROJECT_DIR$/Choose_style/Choose_style.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dialog/Dialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PARSminexmr.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PARSminexmr.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.4 Added choose GTK theme." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,9 +57,9 @@
       <option value="$PROJECT_DIR$/Error/Error.cs" />
       <option value="$PROJECT_DIR$/MainWindow.cs" />
       <option value="$PROJECT_DIR$/FileDialog/FileDialog.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Choose_style/Choose_style.cs" />
       <option value="$PROJECT_DIR$/Dialog/Dialog.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jsRDZsTjWOE6ocIzZCUWKwFueM" />
@@ -139,7 +131,7 @@
       <workItem from="1605725738240" duration="818000" />
       <workItem from="1605880613519" duration="767000" />
       <workItem from="1606230181293" duration="3249000" />
-      <workItem from="1606332048651" duration="298000" />
+      <workItem from="1606332048651" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -183,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605459698603</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0.5.4 Added choose GTK theme.">
+      <created>1606332616199</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606332616199</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +221,7 @@
     <MESSAGE value="Bug fix." />
     <MESSAGE value="0.5.2 Bug fixes." />
     <MESSAGE value="0.5.3 Bug fixes in GTK MessageDialog." />
-    <option name="LAST_COMMIT_MESSAGE" value="0.5.3 Bug fixes in GTK MessageDialog." />
+    <MESSAGE value="0.5.4 Added choose GTK theme." />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.4 Added choose GTK theme." />
   </component>
 </project>
