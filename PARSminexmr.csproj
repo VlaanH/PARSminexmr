@@ -11,10 +11,31 @@
     <EmbeddedResource Include="**\*.glade">
       <LogicalName>%(Filename)%(Extension)</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Update="Style.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Style.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Res\Style.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Style.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="GtkSharp" Version="3.22.25.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Style.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Style.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Res\Style.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Style.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -25,11 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.2 Bug fixes.">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.3 Bug fixes in GTK MessageDialog.">
+      <change afterPath="$PROJECT_DIR$/Choose_style/Choose_style.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dialog/Dialog.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Error/Error.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Error/Error.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PARSminexmr.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PARSminexmr.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +44,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MainWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Parsaddres/ConvertPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Initialization/InitData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/PARS_ALL_data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Initialization/init.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Initialization/InitData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parsaddres/ConvertPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/PARS_ALL_data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -54,10 +57,17 @@
       <option value="$PROJECT_DIR$/Initialization/init.cs" />
       <option value="$PROJECT_DIR$/Data/PARS_ALL_data.cs" />
       <option value="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Initialization/Loading_history.cs" />
-      <option value="$PROJECT_DIR$/MainWindow.cs" />
+      <option value="$PROJECT_DIR$/Style.resx" />
+      <option value="$PROJECT_DIR$/Res/Style.resx" />
+      <option value="$PROJECT_DIR$/Res/Resources.Designer.cs" />
+      <option value="$PROJECT_DIR$/MainWindow.glade" />
       <option value="$PROJECT_DIR$/Error/Error.cs" />
+      <option value="$PROJECT_DIR$/MainWindow.cs" />
+      <option value="$PROJECT_DIR$/FileDialog/FileDialog.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/Choose_style/Choose_style.cs" />
+      <option value="$PROJECT_DIR$/Dialog/Dialog.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jsRDZsTjWOE6ocIzZCUWKwFueM" />
@@ -78,6 +88,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -118,7 +129,17 @@
       <workItem from="1605369430149" duration="4578000" />
       <workItem from="1605432757401" duration="1733000" />
       <workItem from="1605447159535" duration="1755000" />
-      <workItem from="1605450495359" duration="3160000" />
+      <workItem from="1605450495359" duration="3834000" />
+      <workItem from="1605470039551" duration="2264000" />
+      <workItem from="1605473491850" duration="278000" />
+      <workItem from="1605473832912" duration="4506000" />
+      <workItem from="1605530901448" duration="5021000" />
+      <workItem from="1605617270758" duration="5632000" />
+      <workItem from="1605719686826" duration="1374000" />
+      <workItem from="1605725738240" duration="818000" />
+      <workItem from="1605880613519" duration="767000" />
+      <workItem from="1606230181293" duration="3249000" />
+      <workItem from="1606332048651" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -155,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605451067914</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0.5.3 Bug fixes in GTK MessageDialog.">
+      <created>1605459698603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605459698603</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +221,7 @@
     <MESSAGE value="0.4.3 added GTK ProgressBar" />
     <MESSAGE value="Bug fix." />
     <MESSAGE value="0.5.2 Bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="0.5.2 Bug fixes." />
+    <MESSAGE value="0.5.3 Bug fixes in GTK MessageDialog." />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.3 Bug fixes in GTK MessageDialog." />
   </component>
 </project>
