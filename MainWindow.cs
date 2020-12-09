@@ -20,6 +20,7 @@ namespace PARSminexmr
         
         [UI] private Label label = null;
         [UI] private ProgressBar Progres = null;
+        [UI] private Button theme = null;
         [UI] private Button button = null;
         [UI] private Entry Entry = null;
         [UI] private TextView textView = null;
@@ -35,8 +36,10 @@ namespace PARSminexmr
 
             DeleteEvent += Window_DeleteEvent;
             button.Clicked += Button1_Clicked;
-            //Start_Initialization
-            initStart();
+            theme.Clicked += theme_Clicked;            
+        
+            //Start Initialization
+            InitStart();
         }
 
         
@@ -45,13 +48,24 @@ namespace PARSminexmr
             Application.Quit();
         }
 
-       
-       private async void initStart()
+
+
+        private async void theme_Clicked(object sender, EventArgs a)
+        {
+            Choose_style.ButtonChooseStyle();
+        }
+
+
+
+
+
+
+        private async void InitStart()
         {
             await Task.Run(()  =>
             {
 
-                InitData _InitData = new InitData();
+                InitData initData = new InitData();
                     
                 Progres.Visible = false;
                 
@@ -60,31 +74,28 @@ namespace PARSminexmr
                     textView.Buffer.Text = Loading_history.Loading();
                 });
                 
-                _InitData = init.SettingsFileRead();
+                initData = init.SettingsFileRead();
 
 
                
-                Entry.Text = _InitData.Currency+_InitData.Address;
+                Entry.Text = initData.Currency + initData.Address;
               
-                
-                
-                
                 
             });
         }
 
-       private bool _Protection = false;
+       private bool _Double_click_protection = false;
         private async void Button1_Clicked(object sender, EventArgs a)
         {
             if (Entry.Text=="")
             {
                 Error.Entry();
             }
-            else if  (_Protection==false)
+            else if  (_Double_click_protection==false)
             {   
                 
                 Progres.Visible = true;
-                _Protection = true;
+                _Double_click_protection = true;
                 Progres.Fraction = default;
                 
                 PARS_ALL_data allData = new PARS_ALL_data();
@@ -142,7 +153,7 @@ namespace PARSminexmr
                     }
 
 
-                    _Protection = false;
+                    _Double_click_protection = false;
                   
                     
 

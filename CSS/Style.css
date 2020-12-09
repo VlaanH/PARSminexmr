@@ -1,8 +1,14 @@
 textview text {
-  color: #ffffff;
+    font-size: 4px;
+    color: #ffffff;
     background-color: #0e1621;
   
 }
+textview {
+    font-size: 15px;
+}
+
+
 button {
   border-radius: 4px;
   color: #000000;

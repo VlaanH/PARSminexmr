@@ -25,7 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.4 Added choose GTK theme." />
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.4 Added choose GTK theme.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Choose_style/Choose_style.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_style/Choose_style.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialog/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dialog/Dialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Settings/Settings.cs" />
-      <option value="$PROJECT_DIR$/Initialization/init.cs" />
       <option value="$PROJECT_DIR$/Data/PARS_ALL_data.cs" />
       <option value="$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" />
       <option value="$PROJECT_DIR$/Initialization/Loading_history.cs" />
@@ -55,11 +62,12 @@
       <option value="$PROJECT_DIR$/Res/Resources.Designer.cs" />
       <option value="$PROJECT_DIR$/MainWindow.glade" />
       <option value="$PROJECT_DIR$/Error/Error.cs" />
-      <option value="$PROJECT_DIR$/MainWindow.cs" />
       <option value="$PROJECT_DIR$/FileDialog/FileDialog.cs" />
-      <option value="$PROJECT_DIR$/Choose_style/Choose_style.cs" />
+      <option value="$PROJECT_DIR$/Initialization/init.cs" />
       <option value="$PROJECT_DIR$/Dialog/Dialog.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/MainWindow.cs" />
+      <option value="$PROJECT_DIR$/Choose_style/Choose_style.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jsRDZsTjWOE6ocIzZCUWKwFueM" />
@@ -132,6 +140,8 @@
       <workItem from="1605880613519" duration="767000" />
       <workItem from="1606230181293" duration="3249000" />
       <workItem from="1606332048651" duration="602000" />
+      <workItem from="1607275435120" duration="2074000" />
+      <workItem from="1607538667496" duration="4207000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>

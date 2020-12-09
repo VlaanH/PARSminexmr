@@ -25,7 +25,7 @@ namespace PARSminexmr
             
             
             
-            Choose_style.Start();
+            Choose_style.PreStartChoose();
                     
                     
                     

@@ -23,7 +23,7 @@ namespace PARSminexmr
 
         }
 
-        public static string Dialog_Choose_style()
+        public static string Dialog_Choose_style_Prestart()
         {
             string path = default;
             var md = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.YesNo, "Choose a Custom GTK Theme?");
