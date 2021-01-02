@@ -25,14 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.4 Added choose GTK theme.">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.5 Added theme selection button.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Choose_style/Choose_style.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_style/Choose_style.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dialog/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dialog/Dialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsaddres/ParsPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parsaddres/ParsPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +66,10 @@
       <option value="$PROJECT_DIR$/Error/Error.cs" />
       <option value="$PROJECT_DIR$/FileDialog/FileDialog.cs" />
       <option value="$PROJECT_DIR$/Initialization/init.cs" />
-      <option value="$PROJECT_DIR$/Dialog/Dialog.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/MainWindow.cs" />
+      <option value="$PROJECT_DIR$/Parsaddres/ParsPool.cs" />
+      <option value="$PROJECT_DIR$/Dialog/Dialog.cs" />
       <option value="$PROJECT_DIR$/Choose_style/Choose_style.cs" />
     </changedPaths>
   </component>
@@ -141,7 +144,13 @@
       <workItem from="1606230181293" duration="3249000" />
       <workItem from="1606332048651" duration="602000" />
       <workItem from="1607275435120" duration="2074000" />
-      <workItem from="1607538667496" duration="4207000" />
+      <workItem from="1607538667496" duration="5526000" />
+      <workItem from="1608401333019" duration="99000" />
+      <workItem from="1609064377955" duration="32000" />
+      <workItem from="1609068213141" duration="5320000" />
+      <workItem from="1609602203924" duration="60000" />
+      <workItem from="1609602361473" duration="1252000" />
+      <workItem from="1609614538884" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -192,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606332616199</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="0.5.5 Added theme selection button.">
+      <created>1607545727642</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607545727642</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +248,7 @@
     <MESSAGE value="0.5.2 Bug fixes." />
     <MESSAGE value="0.5.3 Bug fixes in GTK MessageDialog." />
     <MESSAGE value="0.5.4 Added choose GTK theme." />
-    <option name="LAST_COMMIT_MESSAGE" value="0.5.4 Added choose GTK theme." />
+    <MESSAGE value="0.5.5 Added theme selection button." />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.5 Added theme selection button." />
   </component>
 </project>

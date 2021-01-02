@@ -14,7 +14,10 @@ namespace PARSminexmr
            
             Style_path = Dialog.DialogFile();
 
-         
+            if (File.Exists("style.css") )
+            {
+                NOxml=File.ReadAllText("style.css");
+            }
             
             
             if (Style_path=="NO")
@@ -32,7 +35,8 @@ namespace PARSminexmr
             }
 
             
-            if (File.Exists("style.css")==true& NOxml!="NO")
+            
+            if (File.Exists("style.css") & NOxml!="NO")
             {
                 CssProvider provider = new CssProvider();
                 provider.LoadFromPath("style.css");

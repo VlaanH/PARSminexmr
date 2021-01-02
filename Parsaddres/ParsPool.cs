@@ -23,8 +23,8 @@ namespace PARSminexmr.Parsaddres
 
             }
 
-            double.TryParse(Regex.Match(Response, @"balance"":""([0-9]+)"",").Groups[1].Value, out double pp);
-            return pp;
+            
+            return double.Parse(Regex.Match(Response, @"balance"":""([0-9]+)"",").Groups[1].Value);
         }
     }
 }

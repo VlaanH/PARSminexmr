@@ -25,26 +25,28 @@ namespace PARSminexmr
 
         public static string Dialog_Choose_style_Prestart()
         {
-            string path = default;
+            string StylePathFail = default;
             var md = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.YesNo, "Choose a Custom GTK Theme?");
             md.SetPosition(Gtk.WindowPosition.CenterAlways);
             md.Title = "Error";
-            int res =md.Run();        
+            int res = md.Run();        
             
             if (res==(int)Gtk.ResponseType.Yes)
             {
-                path= Dialog.DialogFile("Path:{Project}/CSS/Style.css");
+                StylePathFail = Dialog.DialogFile("Path:{Project}/CSS/Style.css");
 
             } 
             else if (res==(int)Gtk.ResponseType.No)
-            { md.Dispose();
+            {   
+                md.Dispose();
+                
                 var _NO = new MessageDialog(null, DialogFlags.Modal, MessageType.Question, ButtonsType.YesNo, "Don't ask again?");
                 _NO.SetPosition(Gtk.WindowPosition.CenterAlways);
                 _NO.Title = "?";
                 int NO =_NO.Run();
                 if (NO==(int)Gtk.ResponseType.Yes)
                 {
-                    path = "NO";
+                    StylePathFail = "NO";
 
                 }
                 _NO.Dispose();
@@ -52,7 +54,7 @@ namespace PARSminexmr
             }
             md.Dispose();
 
-            return path;
+            return StylePathFail;
         }
 
         
