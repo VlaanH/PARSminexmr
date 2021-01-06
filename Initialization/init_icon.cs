@@ -1,8 +1,6 @@
 using System;
 using System.IO;
 using System.Net;
-using Gtk;
-using PARSminexmr;
 
 
 namespace PARSminexmr.Initialization

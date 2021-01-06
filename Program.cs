@@ -1,11 +1,7 @@
 using System;
-using System.IO;
-using System.Reflection;
-using System.Resources;
-using System.Threading;
 using Application = Gtk.Application;
 using PARSminexmr.Initialization;
-using Gtk;
+
 
 
 namespace PARSminexmr

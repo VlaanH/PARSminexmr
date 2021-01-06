@@ -1,4 +1,3 @@
-using PARSminexmr.Initialization;
 namespace PARSminexmr.Data
 {
     public class PARS_ALL_data

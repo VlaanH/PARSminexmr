@@ -192,11 +192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/vlanh/Рабочий стол/PARSminexmr2/PARSminexmr.csproj",
+      "projectUniqueName": "/home/vlanh/Рабочий стол/ParsM/PARSminexmr.csproj",
       "projectName": "PARSminexmr",
-      "projectPath": "/home/vlanh/Рабочий стол/PARSminexmr2/PARSminexmr.csproj",
+      "projectPath": "/home/vlanh/Рабочий стол/ParsM/PARSminexmr.csproj",
       "packagesPath": "/home/vlanh/.nuget/packages/",
-      "outputPath": "/home/vlanh/Рабочий стол/PARSminexmr2/obj/",
+      "outputPath": "/home/vlanh/Рабочий стол/ParsM/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/vlanh/.nuget/NuGet/NuGet.Config"
@@ -243,7 +243,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
