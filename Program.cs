@@ -2,8 +2,6 @@ using System;
 using Application = Gtk.Application;
 using PARSminexmr.Initialization;
 
-
-
 namespace PARSminexmr
 {
      class Program
@@ -18,9 +16,8 @@ namespace PARSminexmr
 
             var app = new Application("org.PARSminexmr.PARSminexmr", GLib.ApplicationFlags.None);
 
-            
-            
-            
+       
+                
             Choose_style.PreStartChoose();
                     
                     

@@ -1,5 +1,3 @@
-using Gtk;
-
 namespace PARSminexmr.Parsaddres
 {
     public static class ConvertPool

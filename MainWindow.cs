@@ -11,7 +11,6 @@ using PARSminexmr.Initialization;
 using PARSminexmr.Data;
 using PARSminexmr.Settings;
 
-
 namespace PARSminexmr
 {
     class MainWindow : Window

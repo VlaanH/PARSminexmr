@@ -26,11 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.5 Added theme selection button.">
-      <change beforePath="$PROJECT_DIR$/Data/PARS_ALL_data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PARS_ALL_data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dialog/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dialog/Dialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +47,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MainWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Initialization/init.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Initialization/InitData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parsaddres/ConvertPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/PARS_ALL_data.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/PARS_ALL_data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Convert_to_fiat_money/Convert.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Initialization/init.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Program.cs" />
-        <option value="$PROJECT_DIR$/Dialog/Dialog.cs" />
-        <option value="$PROJECT_DIR$/Data/PARS_ALL_data.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/MainWindow.glade" />
+      <option value="$PROJECT_DIR$/CSS/Style.css" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/MainWindow.cs" />
+      <option value="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1jsRDZsTjWOE6ocIzZCUWKwFueM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -136,6 +142,7 @@
       <workItem from="1609602203924" duration="60000" />
       <workItem from="1609602361473" duration="1252000" />
       <workItem from="1609614538884" duration="313000" />
+      <workItem from="1610213550827" duration="4602000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -212,7 +219,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -235,23 +242,5 @@
     <MESSAGE value="0.5.4 Added choose GTK theme." />
     <MESSAGE value="0.5.5 Added theme selection button." />
     <option name="LAST_COMMIT_MESSAGE" value="0.5.5 Added theme selection button." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1874" height="346" key="GridCell.Tab.0.bottom" timestamp="1609970149704">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="1874" height="346" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1609970149704" />
-    <state width="1874" height="346" key="GridCell.Tab.0.center" timestamp="1609970149703">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="1874" height="346" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1609970149703" />
-    <state width="1874" height="346" key="GridCell.Tab.0.left" timestamp="1609970149702">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="1874" height="346" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1609970149702" />
-    <state width="1874" height="346" key="GridCell.Tab.0.right" timestamp="1609970149703">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="1874" height="346" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1609970149703" />
   </component>
 </project>

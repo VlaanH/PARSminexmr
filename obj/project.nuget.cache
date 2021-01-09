@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4xa4HY8aDVWRtWhpRRZZSbOilB4OAGO/XldWMdmJdwVlAoe9kEyNJig/CA30bQy276W3mx/zhrYUaUp/wx3hGw==",
+  "dgSpecHash": "cc1yBAEJicUoX5QQHIkTV6PGxa+kEYWzyRa1TIV0S26N8r++N87lpkLKg+nYwd1NI+vS0Abk7hdWcqSLkOPROQ==",
   "success": true,
-  "projectFilePath": "/home/vlanh/Рабочий стол/ParsM/PARSminexmr.csproj",
+  "projectFilePath": "/home/vlanh/Рабочий стол/PARSminexmr2/PARSminexmr.csproj",
   "expectedPackageFiles": [
     "/home/vlanh/.nuget/packages/atksharp/3.22.25.128/atksharp.3.22.25.128.nupkg.sha512",
     "/home/vlanh/.nuget/packages/cairosharp/3.22.25.128/cairosharp.3.22.25.128.nupkg.sha512",
