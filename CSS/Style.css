@@ -9,10 +9,8 @@ textview {
     font-size: 15px;
 }
 
-#paned.button
-{
-    border-radius: 4px;
-    color: #954745;
+#paned button {
+    border-radius: 10px;
 }
 
 #titlebar  {
@@ -20,17 +18,16 @@ textview {
     min-height: 0px;
 }
 
-#main{
+#main {
   background-color: #18212b;
-
 }
 
 entry {
-  border-radius: 4px;
+  border-radius: 10px;
   color: #000000;
   background-color: #ffffff;
 }
 
-#labelm{
+#labelm {
   color: #ffffff;
 }

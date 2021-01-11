@@ -25,18 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.5 Added theme selection button.">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.7 Added Gtk HeaderBar">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.glade" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.glade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +49,10 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/MainWindow.glade" />
-      <option value="$PROJECT_DIR$/CSS/Style.css" />
       <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/MainWindow.cs" />
       <option value="$PROJECT_DIR$/Parsaddres/ConvertPool.cs" />
+      <option value="$PROJECT_DIR$/CSS/Style.css" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jsRDZsTjWOE6ocIzZCUWKwFueM" />
@@ -142,7 +133,8 @@
       <workItem from="1609602203924" duration="60000" />
       <workItem from="1609602361473" duration="1252000" />
       <workItem from="1609614538884" duration="313000" />
-      <workItem from="1610213550827" duration="4602000" />
+      <workItem from="1610213550827" duration="4890000" />
+      <workItem from="1610393875740" duration="767000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -200,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607545727642</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0.5.7 Added Gtk HeaderBar">
+      <created>1610218616810</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610218616810</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +218,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -241,6 +240,7 @@
     <MESSAGE value="0.5.3 Bug fixes in GTK MessageDialog." />
     <MESSAGE value="0.5.4 Added choose GTK theme." />
     <MESSAGE value="0.5.5 Added theme selection button." />
-    <option name="LAST_COMMIT_MESSAGE" value="0.5.5 Added theme selection button." />
+    <MESSAGE value="0.5.7 Added Gtk HeaderBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.7 Added Gtk HeaderBar" />
   </component>
 </project>
