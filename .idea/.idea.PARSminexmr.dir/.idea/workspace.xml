@@ -25,9 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.7 Added Gtk HeaderBar">
+    <list default="true" id="63b08247-fd3d-4c02-86a3-eb9262aefdc2" name="Default Changelist" comment="0.5.7.1 Edited CSS">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PARSminexmr.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PARSminexmr.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +80,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -134,7 +140,9 @@
       <workItem from="1609602361473" duration="1252000" />
       <workItem from="1609614538884" duration="313000" />
       <workItem from="1610213550827" duration="4890000" />
-      <workItem from="1610393875740" duration="767000" />
+      <workItem from="1610393875740" duration="926000" />
+      <workItem from="1610627251433" duration="54000" />
+      <workItem from="1610627330637" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="0.4">
       <created>1604686148968</created>
@@ -199,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610218616810</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0.5.7.1 Edited CSS">
+      <created>1610394676466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610394676466</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +256,7 @@
     <MESSAGE value="0.5.4 Added choose GTK theme." />
     <MESSAGE value="0.5.5 Added theme selection button." />
     <MESSAGE value="0.5.7 Added Gtk HeaderBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.5.7 Added Gtk HeaderBar" />
+    <MESSAGE value="0.5.7.1 Edited CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.7.1 Edited CSS" />
   </component>
 </project>
