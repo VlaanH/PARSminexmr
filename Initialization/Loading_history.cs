@@ -2,7 +2,7 @@ using System.IO;
 
 namespace PARSminexmr.Initialization
 {
-    public static class Loading_history
+    public static class LoadingHistory
     {
        static string _history = default;
        public static string Loading()

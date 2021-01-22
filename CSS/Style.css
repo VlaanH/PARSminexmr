@@ -1,8 +1,18 @@
 textview text {
-    font-size: 4px;
-    color: #ffffff;
-    background-color: #0e1621;
+   font-size: 4px;
+   color: #ffffff;
+   background-color: #0e1621;
   
+}
+#ConversionDialog{
+    background-color: #18212b;
+}
+#buttonbox button{
+    border-radius: 10px;
+}
+
+#ConversionDialog label{
+    color: #ffffff;
 }
 
 textview {

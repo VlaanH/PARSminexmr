@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace PARSminexmr.Initialization
 {
-    public class init
+    public static class Init
     {
        public static InitData SettingsFileRead()
         {

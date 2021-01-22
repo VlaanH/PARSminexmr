@@ -4,25 +4,25 @@ using System.Text.RegularExpressions;
 
 namespace PARSminexmr.Settings
 {
-    public static class _Settings
+    public static class Settings
     {
         public static void Save(string address)
         {
             
-            string Currency = Regex.Match(address, @"([\w \W A-Z 0-9]+):").Groups[1].Value;
+            string currency = Regex.Match(address, @"([\w \W A-Z 0-9]+):").Groups[1].Value;
             
-            string Only_address = Regex.Match(address, @":([\w \W A-Z 0-9]+)").Groups[1].Value;
+            string onlyAddress = Regex.Match(address, @":([\w \W A-Z 0-9]+)").Groups[1].Value;
             
-            string Full_settings = "<Address>" + Only_address + "</Address>" + "\n" + "<Currency>" + Currency + "</Currency>";
+            string fullSettings = "<Address>" + onlyAddress + "</Address>" + "\n" + "<Currency>" + currency + "</Currency>";
 
             try
             {
-                File.WriteAllText("Settings.txt",Full_settings);
+                File.WriteAllText("Settings.txt",fullSettings);
             }
             catch (Exception e)
             {
+                // ignored
             }
-            
         }
     }
 }

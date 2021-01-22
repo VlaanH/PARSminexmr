@@ -4,7 +4,7 @@ namespace PARSminexmr.Parsaddres
     {
         public static string Convert(double doubleP)
         {
-            string stringP=default;
+            string stringP = default;
 
             switch (doubleP)
             {   

@@ -16,7 +16,7 @@ namespace PARSminexmr
 
             if (File.Exists("style.css") )
             {
-                NOxml=File.ReadAllText("style.css");
+                NOxml = File.ReadAllText("style.css");
             }
             
             
