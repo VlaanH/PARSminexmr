@@ -70,7 +70,7 @@ namespace PARSminexmr
                 File.WriteAllText("style.css","NO");
                 Thread.Sleep(1000);
             }
-            else  if (Style_path!=""&Style_path!=null)
+            else  if (Style_path!="" & Style_path != null)
             {
                 File.Copy(Style_path,"style.css");  
             }

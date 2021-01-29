@@ -3,7 +3,7 @@ using Gtk;
 
 namespace PARSminexmr
 {
-    public static class DConversion
+    public static class dialogConversion
     {
         public static string GetQuantity (string entry)
         {

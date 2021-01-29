@@ -83,9 +83,9 @@ namespace PARSminexmr
 
         private void ConvertDialogButton_Clicked(object sender, EventArgs a)
         {
-            string quantity = DConversion.GetQuantity(ConvertEntry.Text);
-            string currency1 = DConversion.GetCurrency1(ConvertEntry.Text);
-            string currency2 = DConversion.GetCurrency2(ConvertEntry.Text);
+            string quantity = dialogConversion.GetQuantity(ConvertEntry.Text);
+            string currency1 = dialogConversion.GetCurrency1(ConvertEntry.Text);
+            string currency2 = dialogConversion.GetCurrency2(ConvertEntry.Text);
 
 
             if (CheckKraken.Active == true)
@@ -95,10 +95,16 @@ namespace PARSminexmr
                 if (responseToRequest != "Error")
                     ConvertLabel.Text = quantity + currency1 + " = " + responseToRequest;
                 else
-                    ConvertLabel.Text = responseToRequest;
+                { 
+                    Gtk.Application.Invoke(delegate
+                    {
+                        ConvertLabel.Text = responseToRequest;
+                    });
+                   
+                }
             }
 
-
+           
 
             if (CheckCalcDotRu.Active == true)
             {
@@ -107,7 +113,13 @@ namespace PARSminexmr
                 if (responseToRequest != "Error")
                     ConvertLabel.Text = quantity + currency1 + " = " + responseToRequest;
                 else
-                    ConvertLabel.Text = responseToRequest;
+                { 
+                    Gtk.Application.Invoke(delegate
+                    {
+                        ConvertLabel.Text = responseToRequest;
+                    });
+                   
+                }
             }
                
            

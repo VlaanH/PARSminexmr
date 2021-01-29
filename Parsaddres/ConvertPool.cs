@@ -8,27 +8,27 @@ namespace PARSminexmr.Parsaddres
 
             switch (doubleP)
             {   
-                         //1
+                     //1
                     case <= 999:
                         
                         stringP = "0.000000000" + doubleP;
                         break;
-                        //2
+                    //2
                     case  <= 9999:
                         
                         stringP = "0.00000000"+ doubleP;
                         break;
-                         //3   
+                    //3   
                     case  <= 99999: 
                             
                         stringP = "0.0000000"+ doubleP;
                         break; 
-                         //4
+                    //4
                     case  <= 999999:
                         
                         stringP = "0.000000" + doubleP;
                         break;
-                        //5
+                    //5
                     case  <= 9999999:
                         
                         stringP = "0.00000" + doubleP;
