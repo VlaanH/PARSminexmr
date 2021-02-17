@@ -187,13 +187,13 @@ namespace PARSminexmr
                  
                     //Getting the current date and time
                     allData.Datetime = DateTime.Now.ToString();
-                    
-                 
-                  
-                    
-                 
+
+
+
+
+                    Console.WriteLine(ParsPool.Pars(Entry.Text));
                     //Convert the pool integer to fractional
-                    allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
+                   // allData.XMR = ConvertPool.Convert();
                     
                    
                    
