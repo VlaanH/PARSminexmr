@@ -16,7 +16,7 @@ namespace PARSminexmr.Parsaddres
             try
             {
                 WebClient wc2 = new System.Net.WebClient();
-                response = wc2.DownloadString($"http://api.minexmr.com/stats_address?address={address}");
+                response = wc2.DownloadString($"https://minexmr.com/api/pool/stats_address?address={address}");
                 pars = double.Parse(Regex.Match(response, @"balance"":""([0-9]+)"",").Groups[1].Value);
             }
             catch (Exception)
