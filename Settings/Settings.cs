@@ -1,9 +1,13 @@
 using System;
 using System.IO;
+using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using PARSminexmr.Initialization;
 
-namespace PARSminexmr.Settings
+namespace PARSminexmr
 {
+   
     public static class Settings
     {
         public static void Save(string address)
@@ -12,17 +16,36 @@ namespace PARSminexmr.Settings
             string currency = Regex.Match(address, @"([\w \W A-Z 0-9]+):").Groups[1].Value;
             
             string onlyAddress = Regex.Match(address, @":([\w \W A-Z 0-9]+)").Groups[1].Value;
-            
-            string fullSettings = "<Address>" + onlyAddress + "</Address>" + "\n" + "<Currency>" + currency + "</Currency>";
 
-            try
+            InitData initData = new InitData() {Address = onlyAddress, Currency = currency};
+            File.WriteAllText("settings.json",default);
+            using (FileStream fs = new FileStream("settings.json",FileMode.Append))
             {
-                File.WriteAllText("Settings.txt",fullSettings);
+                JsonSerializer.SerializeAsync<InitData>(fs, initData);
             }
-            catch (Exception e)
-            {
-                // ignored
-            }
+           
+            
         }
+        
+        public static async Task<InitData> SettingsFileRead()
+        {
+
+            using(FileStream fs = new FileStream("settings.json",FileMode.OpenOrCreate))
+            {
+
+                try
+                {
+                    return await JsonSerializer.DeserializeAsync<InitData>(fs);
+                }
+                catch (Exception e)
+                {
+                    // ignored
+                }
+            }
+
+
+            return null;
+        }
+        
     }
 }

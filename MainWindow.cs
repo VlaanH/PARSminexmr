@@ -9,8 +9,7 @@ using DateTime = System.DateTime;
 using Task = System.Threading.Tasks.Task;
 using PARSminexmr.Initialization;
 using PARSminexmr.Data;
-using PARSminexmr.Settings;
-using Init = PARSminexmr.Initialization.Init;
+
 
 namespace PARSminexmr
 {
@@ -128,27 +127,30 @@ namespace PARSminexmr
         
 
         private async void InitStart()
-        {
+        {   
+            InitData initData = new InitData();
             await Task.Run(()  =>
             {
 
-                InitData initData = new InitData();
+              
                     
                 Progres.Visible = false;
                 
-                Gtk.Application.Invoke(delegate
-                {
-                    textView.Buffer.Text = LoadingHistory.Loading();
-                });
-                
-                initData = Init.SettingsFileRead();
-
-
+                Application.Invoke(delegate
+                {textView.Buffer.Text = LoadingHistory.Loading(); });
+                    
+                    
                
-                Entry.Text = initData.Currency + initData.Address;
-              
-                
+                initData =  Settings.SettingsFileRead().Result;
             });
+            
+            
+            
+            if(initData!=null)
+                Application.Invoke(delegate
+                    { Entry.Text = initData.Currency + initData.Address; });
+            
+           
         }
 
 
@@ -193,7 +195,7 @@ namespace PARSminexmr
 
                
                     //Convert the pool integer to fractional
-                   allData.XMR = ConvertPool.Convert(ParsPool.Pars(Entry.Text));
+                   allData.XMR = ConvertPool.Convert_(ParsPool.Pars(Entry.Text));
                     
                    
                    
@@ -221,7 +223,7 @@ namespace PARSminexmr
 
                   
                         //saving settings to file
-                        Settings.Settings.Save(Entry.Text);
+                        Settings.Save(Entry.Text);
                         
                     }
                     else

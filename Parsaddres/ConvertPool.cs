@@ -1,8 +1,10 @@
+using System;
+
 namespace PARSminexmr.Parsaddres
 {
     public static class ConvertPool
     {
-        public static string Convert(double doubleP)
+        public static string Convert_(double doubleP)
         {
             string stringP = default;
 
