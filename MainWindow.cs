@@ -80,7 +80,7 @@ namespace PARSminexmr
             DialogConversion.HideOnDelete();
         }
 
-        private void ConvertDialogButton_Clicked(object sender, EventArgs a)
+        private async void ConvertDialogButton_Clicked(object sender, EventArgs a)
         {
             string quantity = dialogConversion.GetQuantity(ConvertEntry.Text);
             string currency1 = dialogConversion.GetCurrency1(ConvertEntry.Text);
@@ -89,8 +89,13 @@ namespace PARSminexmr
 
             if (CheckKraken.Active == true)
             {
-                string responseToRequest = ConvertToFiat.Kraken(quantity, currency1, currency2);
-
+                string responseToRequest = default;
+                await Task.Run(() =>
+                {
+                    responseToRequest = ConvertToFiat.Kraken(quantity, currency1, currency2);
+                });
+                
+                
                 if (responseToRequest != "Error")
                     ConvertLabel.Text = quantity + currency1 + " = " + responseToRequest;
                 else
@@ -107,7 +112,12 @@ namespace PARSminexmr
 
             if (CheckCalcDotRu.Active == true)
             {
-                string responseToRequest = ConvertToFiat.CalcDotRu(quantity, currency1, currency2, false);
+                string responseToRequest = default;
+                await Task.Run(() =>
+                {
+                    responseToRequest = ConvertToFiat.CalcDotRu(quantity, currency1, currency2, false);
+                });
+                
                 
                 if (responseToRequest != "Error")
                     ConvertLabel.Text = quantity + currency1 + " = " + responseToRequest;

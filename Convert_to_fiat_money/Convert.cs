@@ -18,7 +18,7 @@ namespace PARSminexmr.Convert_to_fiat_money
           
             WebClient wc = new WebClient();
 
-            APIresponse = wc.DownloadString($"https://api.kraken.com/0/public/Ticker?pair="+currency1+currency2);
+            APIresponse = wc.DownloadString($"https://api.kraken.com/0/public/Ticker?pair="+currency1.ToUpper()+currency2.ToUpper());
             try
             {
                 string ParsPatern = @":{""a"":\[""([\w \W ]+)\],""b"":\[";
@@ -41,7 +41,7 @@ namespace PARSminexmr.Convert_to_fiat_money
             
             if (parsData=="Error") 
             {   //An attempt to change a currency pair
-                APIresponse = wc.DownloadString($"https://api.kraken.com/0/public/Ticker?pair="+currency2+currency1);
+                APIresponse = wc.DownloadString($"https://api.kraken.com/0/public/Ticker?pair="+currency2.ToUpper()+currency1.ToUpper());
                 try
                 {
                     string ParsPatern = @":{""a"":\[""([\w \W ]+)\],""b"":\[";

@@ -10,18 +10,21 @@ namespace PARSminexmr
    
     public static class Settings
     {
-        public static void Save(string address)
+        public static async void Save(string address)
         {
             
             string currency = Regex.Match(address, @"([\w \W A-Z 0-9]+):").Groups[1].Value;
             
             string onlyAddress = Regex.Match(address, @":([\w \W A-Z 0-9]+)").Groups[1].Value;
 
-            InitData initData = new InitData() {Address = onlyAddress, Currency = currency};
-            File.WriteAllText("settings.json",default);
-            using (FileStream fs = new FileStream("settings.json",FileMode.Append))
+            InitData initData = new InitData() {Address = onlyAddress, Currency = currency+":"};
+            
+            using (FileStream fs = new FileStream("settings.json",FileMode.OpenOrCreate))
             {
-                JsonSerializer.SerializeAsync<InitData>(fs, initData);
+                //cleaning
+                fs.SetLength(default);
+                
+               await JsonSerializer.SerializeAsync<InitData>(fs, initData);
             }
            
             
