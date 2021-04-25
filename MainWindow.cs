@@ -176,21 +176,27 @@ namespace PARSminexmr
 
 
 
-
-
-        private bool _doubleClickProtection = false;
+        
         private async void Button1_Clicked(object sender, EventArgs a)
         {
+           
+        
             if (Entry.Text=="")
             {
                 Error.Entry();
             }
-            else if  (_doubleClickProtection==false)
-            {   
-                
-                Progres.Visible = true;
-                _doubleClickProtection = true;
-                Progres.Fraction = default;
+            else
+            {
+                Application.Invoke(delegate
+                {
+                    Progres.Visible = true;
+
+                    //double Click Protection
+                    button.Sensitive = false;
+
+
+                    Progres.Fraction = default;
+                });
                 
                 ParsAllData allData = new ParsAllData();
                 
@@ -244,10 +250,9 @@ namespace PARSminexmr
                         Progres.Fraction = 1;
                     }
 
+                    Application.Invoke(delegate { button.Sensitive = true; });
 
-                    _doubleClickProtection = false;
-                  
-                    
+
 
                 });
                 
